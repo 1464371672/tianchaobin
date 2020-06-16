@@ -1,0 +1,136 @@
+#game {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/sky.png')
+}
+
+.bird {
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 235px;
+    background-image: url('../images/birds.png');
+    margin-left: -15px;
+    position: absolute;
+}
+
+.start {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    top: 295px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.start.start-white {
+    color: #fff;
+    font-size: 24px;
+}
+
+.start.start-blue {
+    color: #09f;
+    font-size: 36px;
+}
+
+.score {
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    /* margin-left:  */
+    transform: translateX(-50%);
+    top: 10px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+/* 蒙层 */
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.7;
+}
+
+.end {
+    position: absolute;
+    left: 50%;
+    /* 相对于自身向左偏移50% */
+    transform: translateX(-50%);
+    top: 70px;
+    text-align: center;
+}
+
+.end .over {
+    font-size: 35px;
+    font-weight: bolder;
+    color: red;
+}
+
+.end .result,
+.end .final-score {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.end .rank-list {
+    margin-top: 20px;
+    color: #09f;
+    text-align: left;
+}
+
+.end .rank-item {
+    height: 30px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+.end .rank-degree {
+    width: 14px;
+    height: 14px;
+    background-color: #8eb9f5;
+    display: inline-block;
+    line-height: 14px;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.end .rank-degree.first {
+    background-color: #f54545;
+}
+
+.end .rank-degree.second {
+    background-color: #ff8547;
+}
+
+.end .rank-degree.third {
+    background-color: #ffac38;
+}
+
+.end .rank-score {
+    width: 30px;
+    display: inline-block;
+}
+
+.end .restart {
+    color: #09f;
+    font-size: 18px;
+    font-weight: bolder;
+    /* 鼠标划过去的时候是一个小手 */
+    cursor: pointer;
+}
